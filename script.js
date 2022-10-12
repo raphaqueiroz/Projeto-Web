@@ -5,101 +5,173 @@ let jogadores = [
         nome:"Marcos",
         numero:1 ,
         posicao:"goleiro",
-        golmarcados:"" ,
-        titular:"true" // TRUE OU FALSE
+        golmarcados:0 ,
+        titular:true // TRUE OU FALSE
     },
     {
         nome:"Cafú",
         numero: 2,
         posicao:"lateral-direito",
-        golmarcados:"",
-        titular:"true" // TRUE OU FALSE
+        golmarcados:0,
+        titular:true // TRUE OU FALSE
     },
     {
         nome:"Lúcio",
-        numero:"" ,
+        numero:"3" ,
         posicao:"zagueiro",
-        golmarcados: "",
-        titular:"true" // TRUE OU FALSE
+        golmarcados: 0,
+        titular:true // TRUE OU FALSE
     },
     {
         nome:"Roque Júnior",
-        numero: "",
+        numero: "4",
         posicao:"zagueiro",
-        golmarcados:"" ,
-        titular:"true" // TRUE OU FALSE
+        golmarcados:0 ,
+        titular:true // TRUE OU FALSE
     },
     {
         nome:"Edmílson",
-        numero: "",
+        numero: "5",
         posicao:"volante e zagueiro",
-        golmarcados:"" ,
-        titular:"true" // TRUE OU FALSE
+        golmarcados:1 ,
+        titular:true // TRUE OU FALSE
     },
     {
         nome:"Roberto Carlos",
-        numero: "",
+        numero: "6",
         posicao:"lateral-esquerdo",
-        golmarcados:"" ,
-        titular:"true" // TRUE OU FALSE
+        golmarcados:1 ,
+        titular:true // TRUE OU FALSE
     },
     {
         nome:"Ricardinho",
-        numero: "",
+        numero: "7",
         posicao:"meio-campista",
-        golmarcados: "",
-        titular:"true" // TRUE OU FALSE
+        golmarcados: 0,
+        titular:true // TRUE OU FALSE
     },
     {
         nome:"Gilberto Silva",
-        numero: "",
+        numero: "8",
         posicao:"volante",
-        golmarcados:"" ,
-        titular:"true" // TRUE OU FALSE
+        golmarcados:0 ,
+        titular:true // TRUE OU FALSE
     },
     {
         nome:"Ronaldo",
-        numero: "",
+        numero: "9",
         posicao:"atacante",
-        golmarcados:"" ,
-        titular:"true" // TRUE OU FALSE
+        golmarcados:8 ,
+        titular:true // TRUE OU FALSE
     },
     {
         nome:"Rivaldo",
-        numero: "",
+        numero: "10",
         posicao:"atacante",
-        golmarcados:"" ,
-        titular:"true" // TRUE OU FALSE
+        golmarcados:5 ,
+        titular:true // TRUE OU FALSE
     },
     {
         nome:"Ronaldinho Gaúcho",
-        numero: "",
+        numero: "11",
         posicao:"meio-camppista",
-        golmarcados: "",
-        titular:"true" // TRUE OU FALSE
+        golmarcados: 2,
+        titular:true // TRUE OU FALSE
     },
     {
         nome:"Dida",
-        numero: "",
+        numero: "12",
         posicao:"goleiro",
-        golmarcados: "",
+        golmarcados: 0,
         titular:"false" ,
     },
     {
         nome:"Belletti",
-        numero: " ",
+        numero: "13",
         posicao:"lateral-direito",
-        golmarcados: "",
+        golmarcados: 0,
         titular:"false" // TRUE OU FALSE
     }
     
 ]
+// Semana 5
+function imprimeJogadores(jogadores){
 
-console.log(jogadores[0].nome)
-for(let i = 0; i <= jogadores.length; i++) {
-    console.log(`${jogadores[i].nome}, ${jogadores[i].posicao}, ${jogadores[i].titular}`)
-    // console.log(jogadores[i].nome)
-    // console.log(jogadores[i].posicao)
-    // console.log(jogadores[i].titular)
+    for (let joga of jogadores){
+        console.log(`
+        Nome: ${joga.nome}\n
+        Número: ${joga.numero}\n
+        Posição: ${joga.posicao}\n
+        Gols marcados: ${joga.golsmarcados}\n
+        É titular? ${joga.titular ? 'sim' : 'não'}
+
+        `)
+    }
 }
+
+imprimeJogadores(jogadores)
+
+// Semana6
+let novoObjeto = {
+        nome:"Anerson Polga ",
+        numero:"14" ,
+        posicao:"zagueiro",
+        golsmarcados: 0,
+        titular:false // TRUE OU FALSE
+
+}
+
+function imprimeString(objeto) { //IMPRIME UM ÚNICO OBJETO
+
+    console.log(`Este foi um dos jogadores da seleção brasileira de 2002 \n
+                ${objeto.nome}
+                Camisa: ${objeto.numero}
+                Posição? ${objeto.posicao}
+                Marcou ${objeto.golsmarcados} gols.
+                Titular: ${objeto.titular ? 'sim' : 'não'}
+                `)
+
+}
+imprimeString(novoObjeto)
+
+function imprimeStringObjeto(arrayDeObjetos) { //IMPRIME A LISTA DE OBJETOS DO ARRAY
+    for (let string of arrayDeObjetos) {
+        imprimeString(string)
+    }
+
+}
+imprimeStringObjeto(jogadores)
+
+
+// Imprimiir Jogador
+
+
+function pesquisaJogador(jogador, nome){
+    const jogadorRetornado = jogador.filter(player => {
+        return player.nome.toUpperCase().includes(nome.toUpperCase())
+    })
+    if (jogadorRetornado.lenth === 0){
+        alert("Jogador não econtrado")
+    } else{
+        return jogadorRetornado
+    }
+}
+
+let buscaJogador = prompt("Que jogador gostaria de ver?")
+
+console.log(pesquisaJogador(jogadores, buscaJogador))
+
+let jogadorEncontrado = pesquisaJogador(jogadores, buscaJogador)
+
+imprimeStringObjeto(jogadorEncontrado)
+
+
+
+
+
+
+
+
+
+
 
