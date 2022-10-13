@@ -5,18 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seleção de 2002</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
+    <header id = "titulo">
         <h1>Seleção Brasileira de 2002</h1>
 
         <h2>Lista de jogarodes escalados</h2>
     </header>
     
     <main id = "container">
-        <input id = "pesquisa" type="text" name="input" >
-        <button id = "botao" name="botao" onclick="">Pesquisar jogador</button>
+        <section>
+            <input id = "pesquisa" type="text" name="pesquisa" >
+            <button id = "botao" name="botao" onclick="pesquisaJogador()">Pesquisar jogador</button>
+        </section>
+
+        <section class = "listaJogador" id = "listaJogador">
+            <section class = "cardJogador" id = "cardJogador">
+                <figure>
+                    <img src="selecao/luizao.jpg" alt="foto Luizão">
+                </figure>
+
+                <article>
+                    <ul>
+                        <li>Nome: Luizão</li>
+                        <li>Camisa: 21</li>
+                        <li>Posição: atacante</li>
+                        <li> Marcou:  undefined gols.</li>
+                        <li>Titular: não</li>
+                    </ul>
+                </article>
+                  
+            </section>
+            
+        </section>
 
 
 
