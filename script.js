@@ -2,6 +2,7 @@ let jogadores = [
   
 
     {
+        img: "selecao/Marcos-goleiro-brasil-copa-do-mundo-2002.png",
         nome:"Marcos",
         numero:"1" ,
         posicao:"goleiro",
@@ -10,6 +11,7 @@ let jogadores = [
         titular:true // TRUE OU FALSE
     },
     {
+        img: "selecao/cafu.jpg",
         nome:"Cafú",
         numero: "2",
         posicao:"lateral-direito",
@@ -18,6 +20,7 @@ let jogadores = [
         titular:true // TRUE OU FALSE
     },
     {
+        img: "selecao/lucio.png",
         nome:"Lúcio",
         numero:"3" ,
         posicao:"zagueiro",
@@ -26,6 +29,7 @@ let jogadores = [
         titular:true // TRUE OU FALSE
     },
     {
+        img: "selecao/Roque_Júnior_em_2002.jpg",
         nome:"Roque Júnior",
         numero: "4",
         posicao:"zagueiro",
@@ -34,6 +38,7 @@ let jogadores = [
         titular:true // TRUE OU FALSE
     },
     {
+        img: "selecao/edmilson.jpg",
         nome:"Edmílson",
         numero: "5",
         posicao:"volante e zagueiro",
@@ -42,6 +47,7 @@ let jogadores = [
         titular:true // TRUE OU FALSE
     },
     {
+        img: "selecao/roberto-carlos.jpg",
         nome:"Roberto Carlos",
         numero: "6",
         posicao:"lateral-esquerdo",
@@ -50,6 +56,7 @@ let jogadores = [
         titular:true // TRUE OU FALSE
     },
     {
+        img: "selecao/ricardiho.jpg",
         nome:"Ricardinho",
         numero: "7",
         posicao:"meio-campista",
@@ -58,6 +65,7 @@ let jogadores = [
         titular:true // TRUE OU FALSE
     },
     {
+        img: "selecao/gilberto-silva.jpg",
         nome:"Gilberto Silva",
         numero: "8",
         posicao:"volante",
@@ -66,6 +74,7 @@ let jogadores = [
         titular:true // TRUE OU FALSE
     },
     {
+        img: "selecao/ronaldo.jpg",
         nome:"Ronaldo",
         numero: "9",
         posicao:"atacante",
@@ -74,6 +83,7 @@ let jogadores = [
         titular:true // TRUE OU FALSE
     },
     {
+        img: "selecao/Rivaldo.jpg",
         nome:"Rivaldo",
         numero: "10",
         posicao:"atacante",
@@ -82,6 +92,7 @@ let jogadores = [
         titular:true // TRUE OU FALSE
     },
     {
+        img: "selecao/ronaldinho-gaucho.jpg",
         nome:"Ronaldinho Gaúcho",
         numero: "11",
         posicao:"meio-campista",
@@ -90,6 +101,7 @@ let jogadores = [
         titular:true // TRUE OU FALSE
     },
     {
+        img: "selecao/dida.jpg",
         nome:"Dida",
         numero: "12",
         posicao:"goleiro",
@@ -98,6 +110,7 @@ let jogadores = [
         titular: false ,
     },
     {
+        img: "selecao/belletti.jpg",
         nome:"Belletti",
         numero: "13",
         posicao:"lateral-direito",
@@ -107,6 +120,7 @@ let jogadores = [
     }
     ,
     {
+        img: "selecao/rogerio-ceni.jpg",
         nome:"Rogério Ceni",
         numero:"22" ,
         posicao:"goleiro",
@@ -116,6 +130,7 @@ let jogadores = [
     }
     ,
     {
+        img: "selecao/junior.jpg",
         nome:"Júnior",
         numero:"17" ,
         posicao:"lateral-esquerdo",
@@ -124,6 +139,7 @@ let jogadores = [
         titular: false // TRUE OU FALSE
     },
     {
+        img: "selecao/kleberson.jpg.crdownload",
         nome:"Kleberson",
         numero:"15" ,
         posicao:"volante",
@@ -132,6 +148,7 @@ let jogadores = [
         titular: false // TRUE OU FALSE
     },
     {
+        img: "selecao/vampeta",
         nome:"Vampeta",
         numero:"18" ,
         posicao:"volante",
@@ -140,6 +157,7 @@ let jogadores = [
         titular: false // TRUE OU FALSE
     },
     {
+        img: "selecao/denilson.jpg",
         nome:"Denílson",
         numero:"17" ,
         posicao:"meio-campista",
@@ -148,6 +166,7 @@ let jogadores = [
         titular: false // TRUE OU FALSE
     },
     {
+        img: "selecao/juninho-paulista.jpg",
         nome:"Juninho Paulista",
         numero:"19" ,
         posicao:"meio-campista",
@@ -156,6 +175,7 @@ let jogadores = [
         titular: false // TRUE OU FALSE
     },
     {
+        img: "selecao/kaka.jpg",
         nome:"Káka",
         numero:"23" ,
         posicao:"meio-campista",
@@ -164,6 +184,7 @@ let jogadores = [
         titular: false // TRUE OU FALSE
     },
     {
+        img: "selecao/edilson.webp",
         nome:"Edílson",
         numero:"20" ,
         posicao:"atacante",
@@ -172,6 +193,7 @@ let jogadores = [
         titular: false // TRUE OU FALSE
     },
     {
+        img: "selecao/luizao.jpg",
         nome:"Luizão",
         numero:"21" ,
         posicao:"atacante",
@@ -181,10 +203,10 @@ let jogadores = [
     }
 ]
 // remover depois
-jogadores.forEach(jogador =>{
-    jogador.img = "selecao/luizao.jpg"
-})
-console.log(jogadores)
+// jogadores.forEach(jogador =>{
+//     jogador.img = "selecao/luizao.jpg"
+// })
+// console.log(jogadores)
 // Variáveis da semana 11
 const container = document.getElementById('container')
 
