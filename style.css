@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 20vh;
+   width: 100%;
+    text-align: center;
+    padding: 20px 20px;
+   margin-bottom: 10px;
+   background-color: rgb(20, 210, 20);
+
+}
+
+#search{
+    margin: 5px;
+}
+
+img{
+    height: 30vh;
+    width: 20vw;
+    border-radius: 10px;
+}
+
+body{
+    
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+main{
+    background-color: rgb(248, 248, 28);
+}
+
+.listaJogador{
+    display: flex;
+    flex-direction: column;
+    justify-items: auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+   
+}
+
+.cardJogador{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 20px;
+    width: 35vw;
+    background-color: greenyellow;
+   
+   
+}
