@@ -299,7 +299,7 @@ function geraCard (jogadores){
                 <img src=${jogador.img} alt="foto ${jogador.nome}">
             </figure>
 
-            <article>
+            <article class = "lista">
                 <ul>
                     <li>Nome: ${jogador.nome}</li>
                     <li>Camisa: ${jogador.numero}</li>
