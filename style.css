@@ -7,6 +7,19 @@
     padding: 0;
 }
 
+#pesquisa{
+    height: 5vh;
+}
+
+#botao{
+    height: 5vh;
+    padding: 7px;
+    border-radius: 15px;
+    color: yellow;
+    background-color: green;
+    font-weight: bold;
+}
+
 header{
     display: flex;
     flex-direction: row;
@@ -18,6 +31,8 @@ header{
     padding: 20px 20px;
    margin-bottom: 10px;
    background-color: rgba(59, 239, 59, 0.415);
+   
+   font-size: 2em;
 
 }
 
@@ -42,12 +57,14 @@ h1{
 img{
     height: 20vh;
     width: 10vw;
+    border: 3px solid yellow;
+    box-shadow: 0px 2px black;
     border-radius: 10px;
     margin: 0;
 }
 
 li{
-    padding: 5px;
+    padding: 3px;
     list-style: none;
     text-align: left;
     font-weight: bold;
@@ -62,10 +79,15 @@ body{
     justify-content: space-around;
     text-align: center;
     
+    
 }
 
 main{
-    background-color: rgb(248, 248, 28);
+    
+   background-color: yellow;
+    
+    height: 100vh;
+    width: 100vw;
 }
 
 .lista{
@@ -78,10 +100,10 @@ main{
 .listaJogador{
     display: flex;
     flex-direction: row;
-    justify-items: auto;
+    justify-items: center;
     justify-content: space-around;
     align-items: center;
-    gap: 1vw;
+    gap: 0.3vw;
     flex-wrap: wrap;
    
 }
@@ -94,19 +116,24 @@ main{
     margin-top: 2vh;
     padding: 20px;
     width: 30vw;
-    /* height: 60vh; */
+    height: 32vh;
     justify-content: space-around;
-    background-color: greenyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.833);
+    color: green;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.585), rgba(255, 255, 0, 0.585), rgba(0, 128, 0, 0.585));
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.382);
    
    
 }
 
 footer{
-
+    
     padding: 20px;
     background-color: black;
     font: normal, bold, medium, arial helvetica sans-serif;
     color: white;
+    
 }
 
 
@@ -161,8 +188,8 @@ a:hover{
     }
 
     img{
-        height: 30vh;
-        width: 25vw;
+        height: 25vh;
+        width: 20vw;
         border-radius: 10px;
         margin: 0;
     }
