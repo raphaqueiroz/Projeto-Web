@@ -223,7 +223,6 @@ function imprimeJogadores(jogadores){
         Posição: ${joga.posicao}\n
         Gols marcados: ${joga.golsmarcados}\n
         É titular? ${joga.titular ? 'sim' : 'não'}
-
         `)
     }
 }
@@ -298,7 +297,6 @@ function geraCard (jogadores){
             <figure>
                 <img src=${jogador.img} alt="foto ${jogador.nome}">
             </figure>
-
             <article class = "lista">
                 <ul>
                     <li>Nome: ${jogador.nome}</li>
@@ -316,14 +314,3 @@ function geraCard (jogadores){
 }
 
 geraCard(jogadores)
-
-
-
-
-
-
-
-
-
-
-
